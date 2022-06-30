@@ -1,3 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using models;
+
 Console.WriteLine("Hello, World!");
-0
+User user1 = new User();
+
