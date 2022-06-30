@@ -1,6 +1,7 @@
-﻿using models;
+﻿using Models;
 using CustomExceptions;
 
 Console.WriteLine("Hello, World!");
-User user1 = new User();
+
+
 
