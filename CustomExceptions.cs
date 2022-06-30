@@ -1,6 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-namespace CustomExceptions;
-
 [System.Serializable]
 public class ResourceNotFound : System.Exception
 {
