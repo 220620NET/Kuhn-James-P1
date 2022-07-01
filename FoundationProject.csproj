@@ -2,7 +2,6 @@
 
   <ItemGroup>
     <ProjectReference Include="Models\models.csproj" />
-    <ProjectReference Include="CustomExceptions\CustomExceptions.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

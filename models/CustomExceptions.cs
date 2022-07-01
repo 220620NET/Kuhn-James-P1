@@ -1,3 +1,5 @@
+namespace models;
+
 [System.Serializable]
 public class ResourceNotFound : System.Exception
 {
