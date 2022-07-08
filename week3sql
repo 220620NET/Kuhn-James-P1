@@ -1,0 +1,35 @@
+DROP TABLE USERS;
+CREATE TABLE foundationproject.Users(
+ID int NOT NULL IDENTITY PRIMARY KEY,
+Username varchar(100),
+Password varchar(100),
+Roles varchar(100)
+);
+
+DROP TABLE foundationproject.TICKETS;
+CREATE TABLE foundationproject.Tickets(
+ID int not null identity primary key,
+authorID int foreign key references Users(id) not null,
+resolverID INT foreign key references Users(id),
+description varchar(255),
+status varchar,
+amount int
+);
+
+INSERT into foundationproject.users (username, password, roles) values ('dummyManager', 'dummyPass', 'password');
+INSERT into foundationproject.users (username, password, roles) values ('dummyEmployee', 'dummyPass', 'password');
+
+
+	id int identity,
+	reason varchar(100) not null,
+	status VARCHAR(10) NOT NULL CHECK (status IN('Pending', 'Approved', 'Denied')),
+	authorID int foreign key references foundationproject.users(id) not null,
+	resolverID int foreign key references foundationproject.users(id) not null,
+	amount DECIMAL not null,
+	primary key(id)
+
+
+
+
+
+)
